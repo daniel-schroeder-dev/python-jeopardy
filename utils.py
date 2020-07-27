@@ -23,9 +23,7 @@ def parse_html():
     soup = BeautifulSoup(r.text, 'html.parser')
 
     category_html = soup.find(id="jeopardy_round").find_all("td", {"class":"category_name"})
-
     clue_html = soup.find(id="jeopardy_round").find_all("td", {"class": "clue_text"})
-
     correct_responses_html = soup.find(id="jeopardy_round").find_all(attrs={"onmouseover": True})
 
     return category_html, clue_html, correct_responses_html
