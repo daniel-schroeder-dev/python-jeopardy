@@ -32,4 +32,4 @@ python main.py
 
 ## Walkthrough Video
 
-See a video of me walking through the project [here]()
+See a video of me walking through the project [here](https://daniel-schroeder-dev.github.io/python-jeopardy/)
