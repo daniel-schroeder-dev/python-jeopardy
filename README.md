@@ -29,3 +29,7 @@ Run the project:
 ```bash
 python main.py 
 ```
+
+## Walkthrough Video
+
+See a video of me walking through the project [here]()
