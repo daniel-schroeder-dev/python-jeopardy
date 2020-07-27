@@ -8,11 +8,9 @@ def build_game_board(categories, clues, correct_responses):
     for row, money in zip(range(5), range(200, 1200, 200)):
         for column in range(6):
             if not game_board.get(categories[column]):
-                game_board[categories[column]] = []
-            
-            game_board[categories[column]].append({
-                money: (clues[clue_index], correct_responses[clue_index])
-            })
+                game_board[categories[column]] = {}
+
+            game_board[categories[column]][money] = (clues[clue_index], correct_responses[clue_index])
             clue_index += 1
 
     return game_board

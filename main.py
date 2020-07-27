@@ -19,7 +19,15 @@ game_board = build_game_board(categories, clues, correct_responses)
 
 for category, questions in game_board.items():
     print(category)
-    for question in questions:
-        for money, qa in question.items():
-            print(money, qa)
+    for money, qa in questions.items():
+        print(money, qa)
 
+
+import pprint
+
+pp = pprint.PrettyPrinter(indent=4)
+pp.pprint(game_board)
+
+# I'll take Celebrity Exes for 200 Alex
+
+print(game_board['CELEBRITY EXES'][200])
